@@ -7,6 +7,8 @@
 
 body{
     font-family: 'Cabin', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.35;
 }
 
 .flex-centered{
@@ -25,6 +27,12 @@ body{
     justify-content: space-between;
 }
 
+.flex-a-center{
+    display: flex;
+    align-items: center;
+}
+
+
 .container{
     max-width: 1050px;
     /* width: 65 */
@@ -32,7 +40,7 @@ body{
 }
 
 .jumbo-container{
-    max-width: 700px;
+    max-width: 750px;
     /* width: 50% */
     margin: 0 auto;
 }
@@ -46,23 +54,25 @@ body{
 }
 
 .column{
-    height: 400px;
+    padding: 2rem 2.5rem;
+    line-height: 1.2;
 }
 
 .column-big{
-    background-color: #1e8ffe;
+    /* background-color: #1e8ffe; */
     width: 60%;
 }
 
 .column-small{
-    background-color: #febfca;
+    /* background-color: #febfca; */
     width: 40%;
 }
 
 .column-single{
-    background-color: #228a22;
+    /* background-color: #228a22; */
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
+    text-align: center;
 }
 
 .column-70{
@@ -89,24 +99,56 @@ body{
 }
 
 .bg-grey{
-    background-color: #d2d2d2;
+    background-color: #f5f5f5;
 }
+
+.button{
+    background-color: white;
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+.button-black{
+    background-color: #23272a;
+    color: white;
+}
+
+.button-light-blue{
+    background-color: #8da0e0;
+    color: white;
+}
+
 
 header{
-    background-color: #acd7e5;
-    padding: 0 0 .25rem;
+    background-color: #3161e0;
+    /* padding: 0 0 .25rem; */
+    color: white;
+    text-align: center;
 }
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+p{
+    margin-bottom: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 section.navigation{
-    padding: .8rem 0;
-    background-color: #7ffed3;
+    padding: .66rem 0 .33rem;
+    /* background-color: #7ffed3; */
 }
 
-
-header section.navigation > div{
-    /* height: 40px; */
-    background-color: goldenrod;
-}
 
 header section.navigation div.brand,
 header section.navigation nav,
@@ -118,6 +160,10 @@ header section.navigation div.login{
 section.navigation div.brand,
 section.navigation div.login{
     width: 20%;
+}
+
+section.navigation div.brand img{
+    height: 30px;
 }
 
 section.navigation  nav{
@@ -135,19 +181,43 @@ section.navigation  nav ul li{
 
 
 section.navigation div.login{
-    text-align: right;
+    justify-content: flex-end;
 }
 
 
 section#jumbo{
     /* height: 300px; */
-    background-color: #00008a;
-    padding: 3rem 0;
+    /* background-color: #00008a; */
+    background-image: url(../img/jumbo.png);
+    padding: 6rem 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.column img{
+    width: 100%;
 }
 
 div.jumbotron{
     height: 300px;
-    background-color: #ed81ed;
+    padding: 0 3rem;
+    /* background-color: #ed81ed; */
+}
+
+main section.bg-grey{
+    padding: 4rem 0;
+}
+
+p#adventure-banner{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0 auto 2rem;
+    background-image: url(../img/stars.svg);
+    width: 50%;
+    padding-top: 2rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 footer{
@@ -165,8 +235,3 @@ section.links{
     padding-top: .5rem;
 }
 
-div.button{
-    background-color: #feb5c0;
-    height: 2rem;
-    padding: .25rem .5rem;
-}
